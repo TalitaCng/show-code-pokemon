@@ -1,0 +1,66 @@
+<div class="p-24">
+  <h1 matDialogTitle>
+    <span *ngIf="data.isEditMode">Edit user</span>
+    <span *ngIf="!data.isEditMode">Create user</span>
+  </h1>
+  <div mat-dialog-content>
+    <form [formGroup]="service.form" class="normal-form">
+      <mat-grid-list cols="2" rowHeight="300px">
+        <mat-grid-tile>
+          <div class="controles-container">
+            <input type="hidden" formControlName="$key">
+            <mat-form-field>
+              <input formControlName="name" matInput placeholder="*Name">
+              <mat-error>This field is mandatory.</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input formControlName="email" matInput placeholder="*Email">
+              <mat-error *ngIf="service.form.controls['email'].errors?.required">This field is mandatory.</mat-error>
+              <mat-error *ngIf="service.form.controls['email'].errors?.email">Invalid email address..</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input formControlName="cpf" matInput placeholder="*CPF" mask="000.000.000-00">
+              <mat-error>This field is mandatory.</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input formControlName="phone" matInput placeholder="Phone"  mask="(00) 00000-0000">
+            </mat-form-field>
+            <span *ngIf="errorMessage" class="text-warn">{{errorMessage}}</span>
+          </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <div class="controles-container">
+            <div class="add-bottom-padding">
+              <mat-form-field class="example-full-width" *ngIf="pokemons">
+                <input type="text"
+                       placeholder="Pokemon name"
+                       aria-label="Number"
+                       matInput
+                       [formControl]="pokeControl"
+                       [(ngModel)]="selectedPokemon"
+                       (keyup.enter)="changeImage()"
+                       (keyup.insert)="changeImage()"
+                       (select)="changeImage()"
+                       [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let poke of filteredPokemons | async" [value]="poke"
+                              (click)="changeImage()">
+                    {{poke}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+            </div>
+            <div>
+              <img class="create-user-gif" [src]="pokemonUrl"/>
+            </div>
+          </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </form>
+  </div>
+  <div mat-dialog-actions class="pt-24 row">
+    <button mat-button class="mat-accent mr-16" color="primary" [disabled]="service.form.invalid" (click)="onSave()">Save</button>
+    <button mat-button (click)="dialogRef.close(false)">Close</button>
+  </div>
+</div>
+

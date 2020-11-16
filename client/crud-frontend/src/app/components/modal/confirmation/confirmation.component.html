@@ -1,0 +1,8 @@
+<div class="p-24">
+  <h1 matDialogTitle>{{data.title}}</h1>
+  <div mat-dialog-content><span>{{data.message}}</span></div>
+  <div mat-dialog-actions class="pt-24 row">
+    <button mat-button class="mat-accent mr-16" (click)="dialogRef.close(true)">Yes</button>
+    <button mat-button (click)="dialogRef.close(false)">No, close</button>
+  </div>
+</div>

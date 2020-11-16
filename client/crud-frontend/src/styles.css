@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.div.container {
+  margin: 0px 40px;
+}
+
+.fill-remaning-space {
+  flex: 1 1 auto;
+}
+
+.form.normal-form {
+  margin: 10px;
+}
+
+.controles-container {
+  width: 100%;
+  padding: 5%;
+}
+
+.controles-container > * {
+  width: 100%;
+}
+
+.add-bottom-padding {
+  padding-bottom: 10px;
+}
+
+.button-row button {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+
+.table-spaces {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.filter-space {
+  margin-bottom: 0px;
+}
+
+.text-warn {
+  color: #f44336;
+}
+
+.toolbar-color {
+  background-color: rgba(0, 0, 0, 0.98);
+  color: white;
+}
+
+.mat-grid-tile-buttom {
+  left: 0px !important;
+  width: calc((7% - 0.5px) * 1 + 0px) !important;
+  top: 0px !important;
+  height: calc(50px) !important;
+}
+
+.mat-grid-tile-search {
+  left: calc((50% - 0.5px + 1px) * 1) !important;
+  width: calc((83% - 0.5px) * 1 + 0px) !important;
+  top: 0px !important;
+  height: calc(80px) !important;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.create-user-gif {
+  max-width: 60%;
+  margin-top: 30px;
+  max-height: 50%;
+}

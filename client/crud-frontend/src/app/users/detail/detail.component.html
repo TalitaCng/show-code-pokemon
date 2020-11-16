@@ -1,0 +1,23 @@
+<div class="p-24" *ngIf="user">
+  <h1 matDialogTitle>{{user.name}}</h1>
+  <div mat-dialog-content class="col">
+    <div class="row row-top" *ngIf="user.email">
+      <span>Email: {{user.email}}</span>
+    </div>
+    <div class="row row-top" *ngIf="user.cpf">
+      <span>CPF: {{user.cpf}}</span>
+    </div>
+    <div class="row row-top" *ngIf="user.phone">
+      <span>Phone: {{user.phone}}</span>
+    </div>
+    <div class="row row-top" *ngIf="user.pokemonName">
+      <span>Pokemon: {{user.pokemonName}}</span>
+    </div>
+    <div class="row row-top" *ngIf="user.pokemonName">
+      <img class="create-user-gif" [src]="pokemonUrl"/>
+    </div>
+  </div>
+  <div mat-dialog-actions class="pt-24 row">
+    <button mat-button (click)="dialogRef.close(false)">close</button>
+  </div>
+</div>
