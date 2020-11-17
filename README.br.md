@@ -42,4 +42,4 @@ Vá a pasta do client (`client/crud-fontend`) e instale os pacotes npm que estao
 npm install
 npm start
 ```
-O `npm start` é o comando que builda (compila TypeScript e copia assets ) da aplicação dentro da pasta `/dist, olhando para as alterações dos arquivos e rodando na porta `4200`;. Então você pode acessar usando o seguinte link no seu navegador `http://localhost:4200` 
+O `npm start` é o comando que builda (compila TypeScript e copia assets ) da aplicação dentro da pasta `/dist`, olhando para as alterações dos arquivos e rodando na porta `4200`;. Então você pode acessar usando o seguinte link no seu navegador `http://localhost:4200` 
