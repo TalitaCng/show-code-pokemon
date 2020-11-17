@@ -28,7 +28,7 @@ mvn spring-boot:run
 The `mvn spring-boot:run` command start the spring boot application and runs on port `8080` So you can access the application using `http://localhost:8080`.
 After that you application is running you can access the API Documentation: `http://localhost:8080/swagger-ui.html#/`
 
-IMPORTANT: The server application is expected that you have a local `postgres database` so you can configure the database ports, login and password at the `application.properties` (~/server/restapi/src/main/resources/application.properties) in this file you will find an example of configuration.
+IMPORTANT: The server application is expected that you have a local `postgres database` so you can configure the database (port, login and password) at the `application.properties` file (~/server/restapi/src/main/resources/application.properties). In this file you will find an example of configuration.
 You don't need to run any sql script, just create and server and an empty database. When you run the spring application the tables will be create automatically.
 
 
