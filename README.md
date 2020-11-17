@@ -1,6 +1,6 @@
 # show-code-interview
 
-This is a project for show how I code. In this case I build and API Rest using Spring boot and and simple web application using Angular
+This is a project for show how I code. In this case I created and API Rest using Spring boot and web application using Angular
 
 ## Requirements
 
