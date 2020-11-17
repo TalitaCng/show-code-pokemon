@@ -9,7 +9,7 @@ For building and running the application you need:
 - [JDK 13](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)
 - [Maven](https://maven.apache.org)
 - [Node](https://nodejs.org/en/)
-- [PostgresSql] (https://www.postgresql.org/)
+- [Postgres](https://www.postgresql.org/)
 
 ## Get started
 
@@ -26,8 +26,7 @@ There's so many ways to run an Spring Boot application, here I will suggest you 
 mvn spring-boot:run
 ```
 The `mvn spring-boot:run` command start the spring boot application and runs on port `8080`.
-
-
+The server application is expected that you have a local `postgres database` so you can configure the database ports, login and password at the `application.properties` (~/server/restapi/src/main/resources/application.properties) in this file you will find an example of configuration.
 
 ### CLIENT CONFIG: 
 Go to client folder (`client/crud-fontend`) and then install the `npm` packages described in the `package.json` and verify that it works:
