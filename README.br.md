@@ -1,7 +1,7 @@
 # show-code-interview
 
 Esse é um projeto para mostrar como eu codifico, quais são as boas práticas e linguagens que eu tenho mais habilidade. 
-Nesse projeto eu criei uma API Rest usando spring boot e uma aplicação web usando Angular.
+Nesse projeto eu criei uma API Rest usando spring boot e uma aplicação web usando Angular. Nessa aplicação web além da minha API feita em spring eu utilizei também  a API https://pokeapi.co/
 
 ## Pré requisitos
 
