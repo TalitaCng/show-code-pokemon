@@ -1,6 +1,6 @@
 # show-code-interview
 
-This is a project for show how I code. In this case I created and API Rest using Spring boot and web application using Angular using the https://pokeapi.co/ API
+This is a project for show how I code. In this case I created and API Rest using Spring boot and web application using Angular. In this web application besides using my own Spring boot API I used the open API from https://pokeapi.co/
 
 ## Requirements
 
