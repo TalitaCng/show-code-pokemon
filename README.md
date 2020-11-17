@@ -20,7 +20,7 @@ git clone https://github.com/TalitaCng/show-code-pokemon.git
 ```
 
 ### Server Config: 
-There's so many ways to run an Spring Boot application, here I will suggest you to run it locally. So execute the `main` method in the `com.talitacassanego.restapi.RestApiApplication` class from your IDE.
+Execute the `main` method in the `com.talitacassanego.restapi.RestApiApplication` class from your IDE.
 
 ```shell
 mvn spring-boot:run
